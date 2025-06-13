@@ -5,15 +5,13 @@ import { Component } from "@angular/core";
     selector: "app-server",
     standalone: false,
     templateUrl: "./server.component.html",
-    styles: [`
-        .online {
-            color: white;
-        }    
-    `]
+    styleUrl: "./server.component.css"
 })
 export class ServerComponent {
     serverId: number = 10;
     serverStatus: string = "offline";
+    showTuna: boolean = false;
+    log = [];
 
     constructor () {
         this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
@@ -21,6 +19,11 @@ export class ServerComponent {
 
     getColor() {
         return this.serverStatus === 'offline' ? 'red' : 'green';
+    }
+
+    onToggleDetails() {
+        this.showTuna = !this.showTuna;
+        this.log.push(new Date());
     }
 }
 

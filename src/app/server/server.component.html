@@ -3,8 +3,13 @@
 [ngClass]="{online: serverStatus === 'online'}"
 >Server with ID {{ serverId }} is {{ serverStatus }}
 </p>
-
-
+<button (click)="onToggleDetails()">Display details</button>
+<p *ngIf="showTuna">Tuna password = TUNA</p>
+<div 
+*ngFor="let itemLog of log; let i = index"
+[ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+[ngClass]="{'white-text': i >= 4}"
+>{{ itemLog }}</div>
 
 
 
