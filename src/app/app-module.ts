@@ -1,19 +1,16 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { App } from './app';
-import { ServerComponent } from './server/server.component';
 import { FormsModule } from '@angular/forms';
-import { Servers } from './servers/servers';
-import { WarningAlert } from './warning-alert/warning-alert';
-import { SuccessAlert } from './success-alert/success-alert';
+import { Coockpit } from './coockpit/coockpit';
+import { ServerElement } from './server-element/server-element';
+
 
 @NgModule({
   declarations: [
     App,
-    ServerComponent,
-    Servers,
-    WarningAlert,
-    SuccessAlert
+    Coockpit,
+    ServerElement,
   ],
   imports: [
     BrowserModule,
