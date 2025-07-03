@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Coockpit } from './coockpit';
+import { Even } from './even';
 
-describe('Coockpit', () => {
-  let component: Coockpit;
-  let fixture: ComponentFixture<Coockpit>;
+describe('Even', () => {
+  let component: Even;
+  let fixture: ComponentFixture<Even>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [Coockpit]
+      declarations: [Even]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Coockpit);
+    fixture = TestBed.createComponent(Even);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

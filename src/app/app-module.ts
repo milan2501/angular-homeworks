@@ -2,15 +2,17 @@ import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { App } from './app';
 import { FormsModule } from '@angular/forms';
-import { Coockpit } from './coockpit/coockpit';
-import { ServerElement } from './server-element/server-element';
+import { GameControl } from './game-control/game-control';
+import { Odd } from './odd/odd';
+import { Even } from './even/even';
 
 
 @NgModule({
   declarations: [
     App,
-    Coockpit,
-    ServerElement,
+    GameControl,
+    Odd,
+    Even,
   ],
   imports: [
     BrowserModule,
