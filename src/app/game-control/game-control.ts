@@ -23,11 +23,10 @@ export class GameControl {
     this.interval = setInterval(() => {
       this.intervalFired.emit(this.lastNumber + 1);
       this.lastNumber++;
-    }, 1000)
+    }, 400)
   }
 
   onPauseGame() {
     clearInterval(this.interval);
-    this.lastNumber = 0;
   }
 }
